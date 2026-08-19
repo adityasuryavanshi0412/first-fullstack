@@ -1,0 +1,40 @@
+# ==========================================
+# 1. FRONTEND (React / Node / Vite)
+# ==========================================
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ==========================================
+# 2. BACKEND (Java / Spring Boot / Maven)
+# ==========================================
+backend/**/target/
+backend/**/build/
+backend/**/*.class
+backend/**/*.log
+
+# Spring Boot Configuration files containing secrets/passwords
+backend/**/src/main/resources/application.properties
+backend/**/src/main/resources/application-dev.properties
+backend/**/src/main/resources/application-prod.properties
+
+# ==========================================
+# 3. IDEs & EDITORS (VS Code, Eclipse, IntelliJ)
+# ==========================================
+.vscode/
+.idea/
+*.iml
+backend/**/.classpath
+backend/**/.project
+backend/**/.settings/
+backend/**/.metadata/
+
+# ==========================================
+# 4. OS / System Files
+# ==========================================
+.DS_Store
+Thumbs.db
+*.log
