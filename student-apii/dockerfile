@@ -1,14 +1,15 @@
 FROM eclipse-temurin:25-jdk
 
+# Install Maven manually inside the container
+RUN apt-get update && apt-get install -y maven
+
 WORKDIR /app
 
 COPY pom.xml .
-
 COPY src ./src
 
-RUN chmod +x mvnw 2>/dev/null || true
-
-RUN ./mvnw clean package -DskipTests || mvn clean package -DskipTests
+# Build the application using standard maven
+RUN mvn clean package -DskipTests
 
 EXPOSE 8080
 
