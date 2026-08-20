@@ -8,7 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/students")
-@CrossOrigin(origins = "https://first-fullstack-1.onrender.com")
+@CrossOrigin(origins = "*")
 public class StudentController {
 
     private final StudentService studentService;
