@@ -7,7 +7,7 @@ function App() {
   const [students, setStudents] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const API_URL = "https://first-fullstack-57x3.onrender.com";
+  const API_URL = "https://first-fullstack-57x3.onrender.com/api/students";
 
   // Get all students
   const getStudents = async () => {
